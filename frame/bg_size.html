@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="text-align: center; color: blue">Свойство background-size</h1>
+<p>Свойство <span style="font-weight: bold;">background-size</span> задает размер картинки фона. Значением свойства служат любые единицы для размеров, либо
+    ключевые слова auto, cover или contain.</p>
+<p><span style="font-weight: bold;">Auto</span> &mdash; фон будет иметь натуральный размер, такой, как реальный размер картинки фона.
+    Если же auto задано только для одной стороны, то по этой стороне фон будет масштабироваться так, чтобы иметь неискаженные
+    пропорции.</p>
+<p><span style="font-weight: bold;">Cover</span> &mdash; масштабирует картинку так, чтобы она накрыла собой весь блок с сохранением
+    пропорций. Картинка будет стараться поместиться целиком, но это не всегда будет получаться, поэтому какая-то ее часть
+    будет обрезаться. Блок всегда будет покрыт картинкой целиком.</p>
+<p><span style="font-weight: bold;">Contain</span> &mdash; масштабирует картинку так, чтобы она целиком влезла в блок с сохранением
+    пропорций. При этом она может занять или всю ширину, или всю высоту (зависит от пропорций картинки и от размеров элемента).
+    Блок в общем случае будет покрыт картинкой не целиком (зато картинка всегда будет видна вся, хоть и в уменьшенном
+    варианте).</p>
+<p>Значение по умолчанию: auto.</p>
+<p style="font-size: 20px; font-weight: bold; text-align: center;">Пример 1</p>
+<p>Сейчас фоновая картинка будет иметь свой натуральный размер.</p>
+<div style="
+    background-repeat: no-repeat;
+	background-image: url('https://github.com/dariatelevich/it_academy_resources/raw/master/images/zebra.jpg');
+    border: 1px solid black;
+    width: 700px;
+    height: 500px;"></div>
+<p style="font-size: 20px; font-weight: bold; text-align: center;">Пример 2</p>
+<p>Сейчас фоновая картинка будет размер 300px на 500px (в нашем случае пропорции картинки исказятся).</p>
+<div style="
+    background-size: 300px 500px;
+	background-repeat: no-repeat;
+	background-image: url('https://github.com/dariatelevich/it_academy_resources/raw/master/images/zebra.jpg');
+    border: 1px solid black;
+    width: 400px;
+    height: 500px;"></div>
+<p style="font-size: 20px; font-weight: bold; text-align: center;">Пример 3</p>
+<p>Сейчас фоновая картинка будет размер 500px на 500px (в нашем случае пропорции картинки исказятся).</p>
+<div style="
+    background-size: 500px;
+	background-repeat: no-repeat;
+	background-image: url('https://github.com/dariatelevich/it_academy_resources/raw/master/images/zebra.jpg');
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;"></div>
+<p style="font-size: 20px; font-weight: bold; text-align: center;">Пример 4</p>
+<p>Сейчас фоновая картинка будет размер 500px по горизонтали, а по вертикали ее размер подстроится так, чтобы пропорции
+    не исказились.</p>
+<div style="
+    background-size: 500px auto;
+	background-repeat: no-repeat;
+	background-image: url('https://github.com/dariatelevich/it_academy_resources/raw/master/images/zebra.jpg');
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;"></div>
+<p style="font-size: 20px; font-weight: bold; text-align: center;">Пример 5</p>
+<p>Сейчас фоновая картинка будет размер 500px по вертикали, а по горизонтали ее размер подстроится так, чтобы пропорции
+    не исказились.</p>
+<div style="
+    background-size: auto 500px;
+	background-repeat: no-repeat;
+	background-image: url('https://github.com/dariatelevich/it_academy_resources/raw/master/images/zebra.jpg');
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;"></div>
+<p style="font-size: 20px; font-weight: bold; text-align: center;">Пример 6. Значение cover.</p>
+<p>Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока.</p>
+<div style="background-size: cover;
+	 background-repeat: no-repeat;
+	 background-image: url('https://github.com/dariatelevich/it_academy_resources/raw/master/images/zebra.jpg');
+     border: 1px solid black;
+     margin-bottom: 20px;
+     width: 800px;
+     height: 600px;"></div>
+<div style="background-size: cover;
+	 background-repeat: no-repeat;
+	 background-image: url('https://github.com/dariatelevich/it_academy_resources/raw/master/images/zebra.jpg');
+     border: 1px solid black;
+     margin-bottom: 20px;
+     width: 400px;
+     height: 300px;"></div>
+<div style="background-size: cover;
+	 background-repeat: no-repeat;
+	 background-image: url('https://github.com/dariatelevich/it_academy_resources/raw/master/images/zebra.jpg');
+     border: 1px solid black;
+     margin-bottom: 20px;
+     width: 200px;
+     height: 100px;"></div>
+<p style="font-size: 20px; font-weight: bold; text-align: center;">Пример 7. Значение contain.</p>
+<p>Масштабирует изображение с сохранением пропорций таким образом, чтобы картинка целиком поместилась внутрь блока.</p>
+<div style="background-size: contain;
+	 background-repeat: no-repeat;
+	 background-image: url('https://github.com/dariatelevich/it_academy_resources/raw/master/images/zebra.jpg');
+     border: 1px solid black;
+     margin-bottom: 20px;
+     width: 800px;
+     height: 600px"></div>
+<div style="background-size: contain;
+	 background-repeat: no-repeat;
+	 background-image: url('https://github.com/dariatelevich/it_academy_resources/raw/master/images/zebra.jpg');
+     border: 1px solid black;
+     margin-bottom: 20px;
+     width: 400px;
+     height: 300px"></div>
+<div style="background-size: contain;
+	 background-repeat: no-repeat;
+	 background-image: url('https://github.com/dariatelevich/it_academy_resources/raw/master/images/zebra.jpg');
+     border: 1px solid black;
+     margin-bottom: 20px;
+     width: 200px;
+     height: 100px"></div>
+</body>
+</html>
