@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('https://raw.githubusercontent.com/dariatelevich/it_academy_resources/master/icomoon/fonts/icomoon.eot?i9orzg');
-  src:  url('https://raw.githubusercontent.com/dariatelevich/it_academy_resources/master/icomoon/fonts/icomoon.eot?i9orzg#iefix') format('embedded-opentype'),
-    url('https://raw.githubusercontent.com/dariatelevich/it_academy_resources/master/icomoon/fonts/icomoon.ttf?i9orzg') format('truetype'),
-    url('https://raw.githubusercontent.com/dariatelevich/it_academy_resources/master/icomoon/fonts/icomoon.woff?i9orzg') format('woff'),
-    url('https://raw.githubusercontent.com/dariatelevich/it_academy_resources/master/icomoon/fonts/icomoon.svg?i9orzg#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?i9orzg');
+  src:  url('fonts/icomoon.eot?i9orzg#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?i9orzg') format('truetype'),
+    url('fonts/icomoon.woff?i9orzg') format('woff'),
+    url('fonts/icomoon.svg?i9orzg#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
